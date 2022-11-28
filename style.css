@@ -1,0 +1,216 @@
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.news-grid:nth-child(3) {
+  gap: 15rem;
+}
+hr {
+  border: 0;
+  height: 1px;
+  width: 90%;
+  background: hsl(236, 13%, 42%);
+}
+
+.navContainer {
+  display: flex;
+  grid-column: 1/ 4;
+  height: 75%;
+  align-items: flex-end;
+}
+.logoContainer {
+  display: flex;
+  height: 90%;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: center;
+}
+.menuItemContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  align-items: center;
+}
+ul {
+  display: flex;
+  color: hsl(236, 13%, 42%);
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 36px;
+}
+li {
+  font-size: 20px;
+}
+li:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+.heroImage {
+  grid-column: 1 / 3;
+  grid-column: span 2;
+  grid-row-start: 2;
+}
+
+.heroImage > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+.heroStoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-column-end: 3;
+  height: fit-content;
+}
+.todaysStory {
+  font-weight: 900;
+  display: flex;
+  width: 75%;
+  max-height: 15rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 1;
+  font-size: 65px;
+  line-height: 70px;
+  grid-row-start: 3;
+  grid-column-end: 2;
+}
+
+.mainStory {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-column-end: 3;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+}
+button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: hsl(36, 100%, 99%);
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 1rem 3rem 1rem 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+  border: none;
+  color: hsl(36, 100%, 99%);
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 1rem 3rem 1rem 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.sideStoryContainer {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 3;
+  grid-row: 2/4;
+  background-color: hsl(240, 100%, 5%);
+}
+.sideStoryCards {
+  display: flex;
+  width: 90%;
+}
+
+.cardHeader {
+  display: flex;
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  width: 90%;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h2 {
+  color: hsl(36, 100%, 99%);
+}
+h3 {
+  font-weight: 900;
+}
+h3:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+h4 {
+  font-size: 18px;
+  color: hsl(236, 13%, 42%);
+}
+h2:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+.sideStoryBody {
+  font-size: 20px;
+  color: hsl(233, 8%, 79%);
+  opacity: 80%;
+  font-weight: 200;
+}
+.mainStoryBody {
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 200;
+  line-height: 34px;
+  height: 100%;
+  align-items: center;
+  color: hsl(236, 13%, 42%);
+}
+.buttonContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: top;
+}
+.bottomCardContainer {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  grid-row-start: 4;
+  grid-column: 1/4;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottomStoryNumber {
+  color: hsl(233, 8%, 79%);
+  font-size: 3rem;
+  font-weight: 900;
+}
+.bottomStoryCards {
+  display: flex;
+  gap: 1rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+.bottomStoryBody {
+  line-height: 35px;
+  font-weight: 200;
+}
+.bottomStoryCards > img {
+  max-width: 100%;
+  max-height: 100%;
+}
